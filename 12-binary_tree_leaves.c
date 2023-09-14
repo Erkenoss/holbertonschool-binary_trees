@@ -5,7 +5,7 @@
 *
 * @tree: tree give to the function
 *
-* Return: the numbers of leaves 
+* Return: the numbers of leaves
 */
 
 size_t binary_tree_leaves(const binary_tree_t *tree)
@@ -14,9 +14,9 @@ size_t binary_tree_leaves(const binary_tree_t *tree)
     {
         return (0);
     }
-    
+
     if (tree->left == NULL && tree->right == NULL)
         return (1);
-        
-    return (binary_tree_leaves(tree->left) + binary_tree_leaves(tree->right));	
+
+    return (binary_tree_leaves(tree->left) + binary_tree_leaves(tree->right));
 }
